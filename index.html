@@ -4,12 +4,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Local Storage: A Clicker Game</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header"></div>
-    <div class="game"></div>
-  </div>
+  <div class="page_wrapper">
+		<div class="header">
+			<div class="header__title">
+				Clicker Game
+			</div>
+			<div class="header__tools">
+        <button class="btn btn--red reset">RESET</button>
+				<button class="btn btn--green saveStorage">SAVE STORAGE</button>
+				<button class="btn btn--red clearStorage">CLEAR STORAGE</button>
+			</div>
+		</div>
+		<div class="game">
+			<button class="game__clicker clicker">CLICK ME</button>
+			<div class="game__clicker-counter counter">0</div>
+		</div>
+	</div>
 
+<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
